@@ -119,7 +119,7 @@ function Dialog(parent)
     this.errorLabel = new QLabel;
     this.errorLabel.setFrameStyle(frameStyle);
     var errorButton =
-            new QPushButton(tr("QErrorMessage::show&M&essage()"));
+            new QPushButton(tr("QErrorMessage::show&Message()"));
 
     integerButton["clicked()"].connect(this, this.setInteger);
     doubleButton["clicked()"].connect(this, this.setDouble);
@@ -370,9 +370,9 @@ Dialog.prototype.errorMessage = function()
 (function() {
     var translatorFileName = "qt_";
     translatorFileName += QLocale.system().name();
-    var translator = new QTranslator(qApp);
-    if (translator.load(translatorFileName, QLibraryInfo.location(QLibraryInfo.TranslationsPath)))
-        qApp.installTranslator(translator);
+    //var translator = new QTranslator(qApp);
+    //if (translator.load(translatorFileName, QLibraryInfo.location(QLibraryInfo.TranslationsPath)))
+    //    qApp.installTranslator(translator);
 
     var dialog = new Dialog();
     return dialog.exec();

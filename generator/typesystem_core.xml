@@ -1203,8 +1203,6 @@
 
     <modify-function signature="count(const char *)const" remove="all"/>
 
-    <modify-function signature="data()" remove="all"/>
-
     <modify-function signature="endsWith(const char *)const" remove="all"/>
 
     <modify-function signature="fill(char,int)">

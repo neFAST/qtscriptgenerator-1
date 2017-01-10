@@ -71,6 +71,11 @@ public:
   explicit pp_output_iterator(std::string &__result):
     _M_result (__result) {}
 
+  inline pp_output_iterator &operator=(const typename pp_output_iterator<_Container>& __v)
+  {
+    _M_result = __v._M_result;
+    return *this;
+  }
   inline pp_output_iterator &operator=(typename _Container::const_reference __v)
   {
     if (_M_result.capacity () == _M_result.size ())

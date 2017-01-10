@@ -6,7 +6,7 @@ SUBDIRS = qtscript_core \
 	  qtscript_sql \
 	  qtscript_svg \
 	  qtscript_xml \
-	  qtscript_phonon \
+	#  qtscript_phonon \
 	  qtscript_webkit \
 	  qtscript_xmlpatterns \
 	  qtscript_uitools \
