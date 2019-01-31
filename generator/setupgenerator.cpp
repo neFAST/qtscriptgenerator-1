@@ -64,7 +64,6 @@ void SetupGenerator::generate()
         QList<const AbstractMetaClass*> list = pack.value();
         if (list.isEmpty())
             continue;
-        std::sort(list.begin(), list.end());
 
         QString packName = pack.key();
         QStringList components = packName.split(".");
